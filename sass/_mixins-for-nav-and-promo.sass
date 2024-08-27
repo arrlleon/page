@@ -1,0 +1,83 @@
+=text-navigation-mixin($buttons-color)
+    position: relative
+    color: $buttons-color
+    &:hover
+        color: white
+    &::after
+        content: none
+
+=arrow-navigation-mixin
+    position: absolute
+    top: 19px
+    left: 75px
+
+=dropdown-menu-mixin($background-color)
+    background-color:$background-color
+    border-color: rgb(141, 216, 61)
+
+=dropdown-item-mixin($buttons-color1, $background-color1)
+    color: $buttons-color1
+    &:hover
+        color: white
+        background-color: $background-color1
+
+
+=promo-mixin
+    color: rgb(255, 255, 255)
+    letter-spacing: 0px
+    text-align: left
+
+=text-on-promo-mixin
+    position: absolute
+    top: 26%
+    left: 60%
+
+=star-wars-text-mixin
+    font-size: 36px
+    font-weight: 400
+    line-height: 42px
+    color: rgb(255, 255, 255)
+    letter-spacing: 0px
+    text-align: left
+
+=battlefron2-text-mixin
+    font-size: 24px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0px
+    text-align: left
+
+=Watch-trailer-button-mixin($buttons-text-color)
+
+    color: $buttons-text-color
+    font-size: 16px
+    font-weight: 400
+    line-height: 21px
+    letter-spacing: 0px
+    text-align: left
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 136px
+    height: 38px
+    border-radius: 4px
+    background: rgb(141, 216, 61)
+
+=Explore-Games-button-mixin($buttons-text-color)
+    color: $buttons-text-color
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 136px
+    height: 38px
+    border-radius: 4px
+    background: rgb(130, 130, 130)
+    text-decoration: none
+
+=buttons-promo-mixin
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    gap: 15px
+

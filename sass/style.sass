@@ -1,0 +1,176 @@
+@import reset
+@import mixins-for-nav-and-promo
+@import valiables
+@import adaptivity
+
+.navigation-menu
+    background: rgb(55, 58, 60)
+    
+.text-navigation
+    +text-navigation-mixin($text-and-buttons-color)
+
+.arrow-navigation
+    +arrow-navigation-mixin
+
+.dropdown-menu
+    +dropdown-menu-mixin($background-color)
+
+.dropdown-item
+    +dropdown-item-mixin($text-and-buttons-color, $background-color)
+
+.promo
+    +promo-mixin
+
+.text-on-promo
+    +text-on-promo-mixin
+    +adaptivity-settings-for-940px
+        top: 23%
+        left: 42%
+    +adaptivity-settings-for-460px
+            top: 0%
+            left: 32%
+
+.carousel-control-prev-icon, .carousel-control-next-icon
+    background-color: $green-border-or-background-color
+    border-radius: 40%
+
+.carousel-indicators [data-bs-target] 
+    background: $green-border-or-background-color
+    background-clip: padding-box
+
+.Star-Wars-text
+    +star-wars-text-mixin
+    +adaptivity-settings-for-340px
+        font-size: 23px
+
+.Battlefront2-text
+    +battlefron2-text-mixin
+    +adaptivity-settings-for-340px
+        font-size: 16px
+
+.Watch-trailer-button
+    +Watch-trailer-button-mixin($buttons-text-color)
+    +adaptivity-settings-for-340px
+        height: 28px
+
+.Explore-Games-button
+    +Explore-Games-button-mixin($buttons-text-color)
+    +adaptivity-settings-for-340px
+        height: 28px
+
+.buttons-promo
+    +buttons-promo-mixin
+    +adaptivity-settings-for-940px
+        flex-direction: column
+    +adaptivity-settings-for-340px
+    display: flex
+    justify-content: space-between
+    gap: 4px
+    margin: 0
+
+@import mixins-for-block1
+@import mixins-for-block2
+
+.the-best-value-block
+    background-color: $background-color
+
+.xbox-icon-block
+    +xbox-icon-block-mixin
+
+#the-best-value-text
+    +the-best-value-text-mixin($buttons-text-color)
+
+#in-games-text
+    +in-games-text-mixin($buttons-text-color)
+
+.trio-icons
+    +trio-icons-mixin
+    +adaptivity-settings-for-1200px
+        flex-wrap: wrap
+        gap: 15px
+
+.inside-blocks
+    +inside-blocks-mixin($green-border-or-background-color, $buttons-text-color)
+    a
+        text-decoration: none
+    +adaptivity-settings-for-460px
+        width: 285px
+
+.inside-blocks img
+    height: 170px
+
+.cards-text-inside
+    padding: 15px 5px
+
+.explore-consoles-button
+    +explore-consoles-button-mixin($green-border-or-background-color, $buttons-text-color)
+
+.container-cards
+    padding: 30px
+
+.cards-text-inside-paragraph
+    +cards-text-inside-paragraph-mixin
+
+.block-promo2
+    position: relative
+
+.promo2-image
+    width: 100%
+    min-height: 590px
+
+#promo2-xbox-design
+    +promo2-xbox-design-miixin($buttons-text-color)
+
+#promo2-Make-yours-text
+    +promo2-Make-yours-text-mixin($buttons-text-color)
+
+.container-for-content-block2
+    +container-for-content-block2-mixin
+
+#disign-yours-button
+    +disign-yours-button-mixin
+
+.promo2-buttons button
+    +promo2-buttons-button($buttons-text-color)
+
+#explore-accessories-button
+    +explore-accessories-button-mixin($green-border-or-background-color)
+  
+.promo2-buttons
+    +promo2-buttons-mixin
+    +adaptivity-settings-for-940px
+        flex-direction: column
+
+.footer
+    background-color: $background-color
+    position: relative
+
+@import footer
+
+.footer-menu
+    +footer-menu-mixin
+    +adaptivity-settings-for-940px
+        flex-direction: column
+
+.footer-menu div ul
+    list-style-type: none
+
+.footer-menu div ul li a
+    +footer-menu-a-mixin($buttons-text-color)
+
+.footer-menu div ul li:nth-child(1) a
+    +footer-menu-first-li-a-mixin
+
+.footer-menu div ul li a:hover
+    color: #ffffff
+
+.social
+    +social-block-mixin
+    margin-bottom: 20px
+
+.under-footer-block
+    background-color: $background-color
+
+.under-footer
+    +under-footer-mixin($text-and-buttons-color, $buttons-text-color)
+    padding-top: 10px
